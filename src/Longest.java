@@ -4,8 +4,10 @@ public class Longest {
             return lineA.name +" = " +lineB.name;
         }
         if (lineLenght(lineA) > lineLenght(lineB)) {
-            return lineA.name;
-        } else return lineB.name;
+            return "Dłuższy odcienk to odcinek " +lineA.name +" początek w punkcie " +lineA.pointStart.point +", a koniec w punkcie "
+                    +lineA.pointEnd.point +", długość odcinak to " +lineLenght(lineA);
+        } else return "Dłuższy odcienk to odcinek " +lineB.name +" początek w punkcie " +lineB.pointStart.point +", a koniec w punkcie "
+                +lineB.pointEnd.point +", długość odcinak to " +lineLenght(lineB);
     }
         double lineLenght(Line line) {
         if (line.pointEnd.point > line.pointStart.point) {

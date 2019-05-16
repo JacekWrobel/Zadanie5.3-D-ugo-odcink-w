@@ -1,6 +1,6 @@
 public class Test{
     public static void main(String[] args) {
-        Point pointAStart = new Point(-5);//
+        Point pointAStart = new Point(-4);//
         Point pointAEnd = new Point(5);
         Point pointBStart = new Point(5);
         Point pointBEnd = new Point(-5);
@@ -15,5 +15,6 @@ public class Test{
 
         System.out.println(longest.longestLine(lineA, lineB));//wskazuje na dłuższy odcinek
         System.out.println(longest.isEqueal(lineA, lineB)); //dodatkowe badanie warunku równości
+
     }
 }
