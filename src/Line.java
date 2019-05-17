@@ -1,4 +1,4 @@
-public class Line{
+public class Line {
     Point pointStart;
     Point pointEnd;
     String name;
