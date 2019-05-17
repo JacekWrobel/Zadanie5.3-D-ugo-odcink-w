@@ -10,10 +10,20 @@ public class Test{
 
         Longest longest = new Longest();
 
+
+        Line longer = longest.longestLine(lineA, lineB);
+ /*      System.out.println(longest.longestLine(lineA,lineB).pointStart.getX() +" "
+                +longest.longestLine(lineA,lineB).pointStart.getY() +" "
+                +longest.longestLine(lineA,lineB).pointEnd.getX() +" "
+                +longest.longestLine(lineA,lineB).pointEnd.getY() +" "
+                + longest.lineLenghtNew(longest.longestLine(lineA, lineB)));
+*/
+        System.out.println(longer.name +" " +longer.pointStart.getX() +" " +longer.pointStart.getY()+ " "
+        + longer.pointEnd.getX() +" " + longer.pointEnd.getY() +" " + longest.lineLenghtNew(longer));
+
+
         System.out.println(lineA.name +" długość: " +longest.lineLenghtNew(lineA));
         System.out.println(lineB.name +" długość: " +longest.lineLenghtNew(lineB));
-
-        System.out.println(longest.longestLine(lineA, lineB));
 
     }
 }

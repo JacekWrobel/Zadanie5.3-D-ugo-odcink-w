@@ -1,19 +1,14 @@
 public class Longest {
 
-    String longestLine(Line lineA, Line lineB) {
-        if (lineLenghtNew(lineA) == lineLenghtNew(lineB)) {
-            return lineA.name + " = " + lineB.name;
-        }
+    Line longestLine(Line lineA, Line lineB) {
+        //      if (lineLenghtNew(lineA) == lineLenghtNew(lineB)) {
+        //          return lineA && lineB;}
         if (lineLenghtNew(lineA) > lineLenghtNew(lineB)) {
-            return "Dłuższy odcienk to odcinek " + lineA.name + " początek w punkcie (" + lineA.pointStart.getX() + ", "
-                    + lineA.pointStart.getY() + "), a koniec w punkcie ("
-                    + lineA.pointEnd.getX() + ", " + lineA.pointEnd.getY() + ", długość tego odcinak to "
-                    + lineLenghtNew(lineA);
-        } else
-            return "Dłuższy odcienk to odcinek " + lineB.name + " początek w punkcie (" + lineB.pointStart.getX() + ", "
-                    + lineB.pointStart.getY() + "), a koniec w punkcie ("
-                    + lineB.pointEnd.getX() + ", " + lineB.pointEnd.getY() + "), długość tego odcinka to "
-                    + lineLenghtNew(lineB);
+            return lineA;
+        }
+        if (lineLenghtNew(lineA) < lineLenghtNew(lineB)) {
+            return lineB;
+        } else return null;
     }
 
 
